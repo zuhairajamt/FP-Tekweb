@@ -1,0 +1,26 @@
+.star-widget input{
+  display: none;
+}
+.rating{
+	text-align: right;
+	font-size:25px;
+	padding: 0px;
+}
+.checked{
+	color:yellow;
+}
+.star-widget label{
+  font-size: 25px;
+  color: #444;
+  padding: 3px;
+  float: right;
+  transition: all 0.2s ease;
+
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: yellow;
+}
+input:checked ~ label{
+  color: yellow;
+}
